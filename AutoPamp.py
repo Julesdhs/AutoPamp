@@ -24,3 +24,4 @@ driver.get("https://ns3085211.ip-147-135-255.eu/ensai/index.php?p=121")
 semaine = driver.find_element(by=By.TAG_NAME, value='h2').text
 nom = str.format("screenshot{}.png", semaine)
 driver.get_screenshot_as_file(nom)
+driver.quit()
